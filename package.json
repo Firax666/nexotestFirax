@@ -1,0 +1,13 @@
+{
+  "name": "nexotest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tiny app for testing NexoCloud deployments.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {}
+}
