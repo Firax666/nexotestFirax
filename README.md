@@ -1,22 +1,16 @@
-# nexotest
+# React + Vite
 
-Minimal Node.js app for testing NexoCloud deployments.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Local run
+Currently, two official plugins are available:
 
-```powershell
-docker compose up -d --build
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-The app listens on port `3000` inside the container. NexoCloud detects this from
-the Dockerfile `EXPOSE 3000` line.
+## React Compiler
 
-## NexoCloud project settings
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Type: `React SPA` or `Unknown`
-- Repository URL: the GitHub URL for this repository
-- Branch: `main`
-- Domain: `test.localhost`
-- ENV examples:
-  - `NODE_ENV=production`
-  - `API_URL=http://localhost:8000`
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
